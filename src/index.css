@@ -5,9 +5,18 @@
 body {
   font-family: "Outfit", sans-serif;
   background-image: url(./assets/x.svg);
-  background-size: cover;
+  background-size: 200vh 100vw;
   background-position: top right;
   background-repeat: no-repeat;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 .active {
   background-color: #f02806;
@@ -20,7 +29,7 @@ body {
   background-repeat: no-repeat;
 }
 .navEle {
-  @apply px-5 py-1 rounded transition duration-500 hover:bg-[#F02806] hover:text-black;
+  @apply px-5 py-1 rounded transition duration-500 hover:bg-[#F02806] hover:text-black border-2 border-transparent;
 }
 @media (max-width: 450px) {
   body {
