@@ -2,7 +2,7 @@ const menuBtn = document.querySelectorAll(".menuBtn");
 const menu = document.querySelector(".menu");
 const header = document.querySelector("header");
 
-window.addEventListener("wheel", (e) => {
+window.addEventListener("scroll", (e) => {
   if (e.deltaY >= 0 && window.scrollY > 0) {
     header.classList.add("backdrop-blur");
     header.classList.add("py-8");
