@@ -18,12 +18,10 @@
     <script defer src="./index.js"></script>
   </head>
   <body class="bg-black text-white">
-    <div class="bg min-h-screen min-w-full absolute z-[-1] top-0 right-0"></div>
+    <!-- <div class="bg min-h-screen min-w-full absolute z-[-1] top-0 right-0"></div> -->
 
-    <section class="min-h-screen w-full lg:w-10/12 m-auto">
-      <header
-        class="w-full md:w-[inherit] m-auto fixed flex justify-between transition-all"
-      >
+    <header class="w-screen m-auto fixed flex justify-between transition-all">
+      <div class="w-11/12 m-auto flex justify-between">
         <img src="./assets/logo.svg" alt="" class="logo h-16" />
         <iconify-icon
           inline
@@ -55,13 +53,15 @@
             ></iconify-icon>
           </button>
           <!-- <iconify-icon
-            block
-            icon="mdi:menu"
-            style="color: white"
-            class="text-4xl p-2 flex items-center md:hidden"
-          ></iconify-icon> -->
+              block
+              icon="mdi:menu"
+              style="color: white"
+              class="text-4xl p-2 flex items-center md:hidden"
+            ></iconify-icon> -->
         </nav>
-      </header>
+      </div>
+    </header>
+    <section class="w-full lg:w-10/12 m-auto">
       <div
         class="hero grid grid-cols justify-items-center sm:justify-start sm:grid-cols-2 w-full m-auto items-center min-h-screen"
       >
@@ -78,9 +78,7 @@
         </div>
       </div>
     </section>
-    <section
-      class="about min-h-screen w-10/12 m-auto grid sm:grid-cols-2 items-center"
-    >
+    <section class="about w-10/12 m-auto grid sm:grid-cols-2 items-center">
       <div class="">
         <h1 class="heading font-semibold text-6xl">
           About <span class="text-red-600">x</span>
@@ -107,10 +105,7 @@
       </div>
       <img src="./assets/sample.png" alt="" />
     </section>
-
-    <section
-      class="about min-h-screen w-10/12 m-auto grid sm:grid-cols-2 items-center"
-    >
+    <section class="w-10/12 m-auto grid sm:grid-cols-2 items-center">
       <img src="./assets/sample.png" alt="" />
 
       <div class="">
@@ -138,7 +133,72 @@
         </div>
       </div>
     </section>
-    <section class="min-h-screen w-10/12 m-auto">
+    <section class="w-10/12 m-auto my-32">
+      <h1 class="heading font-semibold text-6xl mb-8">
+        Speakers At <span class="text-red-600">TEDx RTU</span>
+      </h1>
+      <div
+        class="max-w-full overflow-x-scroll flex justify-center flex-wrap gap-4 no-scrollbar"
+      >
+        <div class="rounded-md overflow-hidden h-80 w-72 shrink-0">
+          <img
+            src="./assets/sample-speaker.jpg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden h-80 w-72 shrink-0">
+          <img
+            src="./assets/sample-speaker.jpg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden h-80 w-72 shrink-0">
+          <img
+            src="./assets/sample-speaker.jpg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden h-80 w-72 shrink-0">
+          <img
+            src="./assets/sample-speaker.jpg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden h-80 w-72 shrink-0">
+          <img
+            src="./assets/sample-speaker.jpg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden h-80 w-72 shrink-0">
+          <img
+            src="./assets/sample-speaker.jpg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden h-80 w-72 shrink-0">
+          <img
+            src="./assets/sample-speaker.jpg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+        <div class="rounded-md overflow-hidden h-80 w-72 shrink-0">
+          <img
+            src="./assets/sample-speaker.jpg"
+            alt=""
+            class="object-cover h-full w-full"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="w-10/12 m-auto my-32">
       <h1 class="heading font-semibold text-6xl mb-8">
         Previous <span class="text-red-600">Talks</span>
       </h1>
