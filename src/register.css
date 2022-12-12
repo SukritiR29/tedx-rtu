@@ -1,0 +1,49 @@
+body {
+    font-family: "Outfit", sans-serif;
+    background-size: 200vh 100vw;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
+ 
+
+  .register h2{
+    color: red;
+    font-family: "Outfit", sans-serif;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .register label{
+    color: aliceblue;
+    text-align: left;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-left: 20rem;
+    font-family: "Outfit", sans-serif;
+
+  }
+
+  .register input{
+    height: 2rem;
+    width: 38rem;
+    margin-left: 22rem;
+  }
+
+  .register button{
+    padding: 1rem;
+    border-radius: 0.7rem;
+    color: white;
+    background-color: red;
+    margin-top: 2rem;
+    text-align: right;
+    margin-left: 37rem;
+  }
+
+  .register a{
+    color: white;
+    align-items: center;
+  }
