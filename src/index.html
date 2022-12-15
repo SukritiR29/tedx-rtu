@@ -15,12 +15,12 @@
       src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"
     ></script>
     <link href="./index.css" rel="stylesheet" />
-    <!-- <script defer src="./index.js"></script> -->
+    <script defer src="./index.js"></script>
   </head>
   <body class="bg-black text-white">
     <div class="body">
       <header class="w-screen m-auto fixed flex justify-between transition-all">
-        <div class="w-10/12 m-auto flex justify-between">
+        <div class="w-11/12 m-auto flex justify-between">
           <img src="./assets/logo.svg" alt="" class="logo h-16" />
           <iconify-icon
             inline
@@ -65,53 +65,19 @@
         <div
           class="hero grid grid-cols justify-items-center sm:justify-start sm:grid-cols-2 w-full m-auto items-center min-h-screen"
         >
-          <ul class="flex flex-col lg:flex-row gap-1">
-            <li class="navEle active"><a href="">HOME</a></li>
-            <li class="navEle"><a href="">ABOUT</a></li>
-            <li class="navEle"><a href="">SPEAKERS</a></li>
-            <li class="navEle"><a href="">TALKS</a></li>
-            <li class="navEle"><a href="">TEAM</a></li>
-            <li class="navEle"><a href="">CONTACTS</a></li>
-            <li
-              class="px-5 navEle py-1 rounded hover:bg-transparent transitionduration-500 text-[#F02806] hover:text-[#F02806] hover:border-[#F02806]"
-            >
-              <a href="./register.html">REGISTER</a>
-            </li>
-          </ul>
-          <button class="menuBtn">
-            <iconify-icon
-              icon="material-symbols:arrow-back-rounded"
-              style="color: white"
-              class="p-5 mb-8 block lg:hidden text-4xl cursor-pointer"
-            ></iconify-icon>
-          </button>
-          <!-- <iconify-icon
-              block
-              icon="mdi:menu"
-              style="color: white"
-              class="text-4xl p-2 flex items-center md:hidden"
-            ></iconify-icon> -->
-        </nav>
-      </div>
-    </header>
-    <section class="w-full lg:w-10/12 m-auto">
-      <div
-        class="hero grid grid-cols justify-items-center sm:justify-start sm:grid-cols-2 w-full m-auto items-center min-h-screen"
-      >
-        <div class="text-4xl text-center sm:text-left">
-          <span class="text-[#F02806] font-bold">TEDx</span>
-          <span>Rajasthan Technical University</span>
-          <div class="w-max m-auto mt-4">
-            <a
-              href="./register.html"
-              class="font-normal text-lg border border-solid border-red-600 px-3 py-2 rounded-xl"
-              >Register</a
-            >
-
+          <div class="text-4xl text-center sm:text-left">
+            <span class="text-[#F02806] font-bold">TEDx</span>
+            <span>Rajasthan Technical University</span>
+            <div class="w-max m-auto mt-4">
+              <a
+                href="#"
+                class="font-normal text-lg border border-solid border-red-600 px-3 py-2 rounded-xl"
+                >Register</a
+              >
+            </div>
           </div>
         </div>
       </section>
-      <!-- Home page -->
       <!-- Aboutx page -->
       <section class="about w-10/12 m-auto grid sm:grid-cols-2 items-center">
         <div class="">
@@ -239,7 +205,7 @@
       <!-- About Speakers page -->
       <!-- About Previous Talks page -->
       <section class="w-10/12 m-auto my-32">
-        <h1 class="heading font-semibold text-5xl mb-8">
+        <h1 class="heading font-semibold text-6xl mb-8">
           Previous <span class="text-red-600">Talks</span>
         </h1>
         <div class="max-w-full overflow-x-scroll flex gap-4 no-scrollbar">
@@ -300,44 +266,98 @@
             />
           </div>
         </div>
-      </div>
-    </section>
-    <section class="footer">
-      <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <span class="ml-3 text-xl">TEDxRTU</span>
-          </a>
-          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 TEDxRajasthanTechnicalUniversity —
-            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@tedxrtu</a>
-          </p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a class="text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" class="w-5 h-5" viewBox="0 0 1000 1000">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
+      </section>
+      <!-- footer section -->
+      <section class="footer">
+        <footer class="text-gray-600 body-font">
+          <div
+            class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+          >
+            <a
+              class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+            >
+              <span class="ml-3 text-xl">TEDxRTU</span>
             </a>
-            <a class="ml-3 text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 1000 1000">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-500">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 1000 1000">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-500">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 1000 1000">
-                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-          </span>
-        </div>
-      </footer>
-    </section>
-
+            <p
+              class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+            >
+              © 2023 TEDxRajasthanTechnicalUniversity —
+              <a
+                href="https://twitter.com/knyttneve"
+                class="text-gray-600 ml-1"
+                rel="noopener noreferrer"
+                target="_blank"
+                >@tedxrtu</a
+              >
+            </p>
+            <span
+              class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+            >
+              <a class="text-gray-500">
+                <svg
+                  fill="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  class="w-5 h-5"
+                  viewBox="0 0 1000 1000"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg
+                  fill="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 1000 1000"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  class="w-5 h-5"
+                  viewBox="0 0 1000 1000"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                  ></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="0"
+                  class="w-5 h-5"
+                  viewBox="0 0 1000 1000"
+                >
+                  <path
+                    stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  ></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </footer>
+      </section>
+    </div>
   </body>
 </html>
