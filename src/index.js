@@ -4,17 +4,15 @@ const menu = document.querySelector(".menu");
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", (e) => {
-  if (e.deltaY >= 0 && window.scrollY > 0) {
-    header.classList.add("backdrop-blur");
-    header.classList.add("py-8");
+  if (window.scrollY >= 0) {
+    header.classList.add("bg-blur");
+    header.classList.add("padding");
   }
-  if (e.deltaY <= 0) {
-    header.classList.remove("py-8");
+  if (window.scrollY <= 0) {
+    // header.classList.remove("bg-blur");
+    header.classList.remove("padding");
   }
-  if (e.deltaY <= 0 && window.scrollY <= 0) {
-    header.classList.remove("backdrop-blur");
-    header.classList.remove("py-8");
-  }
+  // console.log("scrolled");
 });
 
 menuBtn.forEach((btn) => {
