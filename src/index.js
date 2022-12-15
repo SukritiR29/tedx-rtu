@@ -1,3 +1,4 @@
+
 const menuBtn = document.querySelectorAll(".menuBtn");
 const menu = document.querySelector(".menu");
 const header = document.querySelector("header");
@@ -29,3 +30,4 @@ menuBtn.forEach((btn) => {
     console.log("clicked");
   });
 });
+  // "source": "src/index.html",
