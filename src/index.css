@@ -1,9 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
   font-family: "Outfit", sans-serif;
+}
+.body {
   background-image: url(./assets/x.svg);
   background-size: 200vh 100vw;
   background-position: top right;
@@ -46,4 +47,10 @@ body {
 }
 .hide {
   transform: translateX(100%);
+}
+.bg-blur {
+  @apply backdrop-blur;
+}
+.padding {
+  @apply py-8;
 }
