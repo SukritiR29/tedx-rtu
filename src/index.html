@@ -15,7 +15,7 @@
       src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"
     ></script>
     <link href="./index.css" rel="stylesheet" />
-    <script defer src="./index.js"></script>
+    <!-- <script defer src="./index.js"></script> -->
   </head>
   <body class="bg-black text-white">
     <div class="body">
@@ -65,16 +65,49 @@
         <div
           class="hero grid grid-cols justify-items-center sm:justify-start sm:grid-cols-2 w-full m-auto items-center min-h-screen"
         >
-          <div class="text-4xl text-center sm:text-left">
-            <span class="text-[#F02806] font-bold">TEDx</span>
-            <span>Rajasthan Technical University</span>
-            <div class="w-max m-auto mt-4">
-              <a
-                href="#"
-                class="font-normal text-lg border border-solid border-red-600 px-3 py-2 rounded-xl"
-                >Register</a
-              >
-            </div>
+          <ul class="flex flex-col lg:flex-row gap-1">
+            <li class="navEle active"><a href="">HOME</a></li>
+            <li class="navEle"><a href="">ABOUT</a></li>
+            <li class="navEle"><a href="">SPEAKERS</a></li>
+            <li class="navEle"><a href="">TALKS</a></li>
+            <li class="navEle"><a href="">TEAM</a></li>
+            <li class="navEle"><a href="">CONTACTS</a></li>
+            <li
+              class="px-5 navEle py-1 rounded hover:bg-transparent transitionduration-500 text-[#F02806] hover:text-[#F02806] hover:border-[#F02806]"
+            >
+              <a href="./register.html">REGISTER</a>
+            </li>
+          </ul>
+          <button class="menuBtn">
+            <iconify-icon
+              icon="material-symbols:arrow-back-rounded"
+              style="color: white"
+              class="p-5 mb-8 block lg:hidden text-4xl cursor-pointer"
+            ></iconify-icon>
+          </button>
+          <!-- <iconify-icon
+              block
+              icon="mdi:menu"
+              style="color: white"
+              class="text-4xl p-2 flex items-center md:hidden"
+            ></iconify-icon> -->
+        </nav>
+      </div>
+    </header>
+    <section class="w-full lg:w-10/12 m-auto">
+      <div
+        class="hero grid grid-cols justify-items-center sm:justify-start sm:grid-cols-2 w-full m-auto items-center min-h-screen"
+      >
+        <div class="text-4xl text-center sm:text-left">
+          <span class="text-[#F02806] font-bold">TEDx</span>
+          <span>Rajasthan Technical University</span>
+          <div class="w-max m-auto mt-4">
+            <a
+              href="./register.html"
+              class="font-normal text-lg border border-solid border-red-600 px-3 py-2 rounded-xl"
+              >Register</a
+            >
+
           </div>
         </div>
       </section>
