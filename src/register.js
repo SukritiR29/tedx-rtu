@@ -1,13 +1,14 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
-import { collection, addDoc } from "firebase/firestore"; 
+import { getDocs, Firestore, getFirestore, onSnapshot, query, where, getDoc } from "firebase/firestore";
+import { collection, addDoc, getDocs } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+async function getdata() { return }
 const firebaseConfig = {
   apiKey: "AIzaSyBkx7GcgUZuwcvQBqeCyMHJH10wqIFVkSg",
   authDomain: "tedx-71668.firebaseapp.com",
@@ -24,35 +25,77 @@ const db = getFirestore(app);
 const analytics = getAnalytics(app);
 
 
-// const mmongoclient=require('mongodb').MongoClient
+// if there is already user with same email
+async function isvaliddata(q2) {
+
+  const querySnapshot = await getDocs(q2);
+  console.log(querySnapshot.docs.length);
+  return (querySnapshot.docs.length);
+}
+// function to adduser details to firebase
+async function adduser(fname, lname, college, branch, contact, email) {
+  const docRef = await addDoc(collection(db, 'users'), {
+    firstname: fname,
+    lasttname: lname,
+    college: college,
+    branch: branch,
+    contact: contact,
+    email: email,
+  });
+  console.log("Document written with ID: ", docRef.id);
+}
+
+
 function logSubmit(event) {
 
-    console.log("form is submitted")
-    log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
-    event.preventDefault();
-    const formData = new FormData(event.target);
+
+
+  const formData = new FormData(event.target);
   const formProps = Object.fromEntries(formData);
-  if(formProps.fname==""||formProps.lname==""||formProps.college==""||formProps.branch==""||formProps.contact==""){
+  // if any of the field is empty
+  if (formProps.fname == "" || formProps.lname == "" || formProps.college == "" || formProps.branch == "" || formProps.contact == "") {
     alert("enter all valid details")
   }
-  else{  try {
-    const docRef =  addDoc(collection(db, "users"), {
-      firstname: formProps.fname,
-      lasttname: formProps.lname,
-      college: formProps.college,
-      branch: formProps.branch,
-      contact: formProps.contact,
-    });
-    console.log("Document written with ID: ", docRef.id);
-  } catch (e) {
-    console.error("Error adding document: ", e);
-  }}
-  console.log(formProps)
+  
+  else {
+    try {
+      var contact = formProps.email;
+      const docref = collection(db, 'users');
+      const q2 = query(collection(db, "users"), where("email", "==", contact));
+      // function will return promise
+      let l = isvaliddata(q2);
+      l.then(
+        function (value) {
+          if (value == 0) {
+            adduser(formProps.fname,
+              formProps.lname, formProps.college, formProps.branch, formProps.contact, formProps.email);
+            alert("your response has been accepted ")
+              document.getElementById("register").reset();
+            }
 
 
+          else {
+            alert("user is already registered use different mail");
+          }
+
+        },
+        function (error) { console.log(error) }
+      );
+
+
+
+
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
   }
-  
-  const form = document.getElementById('register');
-//   const log = document.getElementById('log');
-  
-  form.addEventListener('submit', logSubmit);
+  event.preventDefault();
+
+
+
+}
+
+const form = document.getElementById('register');
+
+
+form.addEventListener('submit', logSubmit);
