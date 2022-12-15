@@ -1,4 +1,3 @@
-
 const menuBtn = document.querySelectorAll(".menuBtn");
 const menu = document.querySelector(".menu");
 const header = document.querySelector("header");
@@ -12,7 +11,7 @@ window.addEventListener("scroll", (e) => {
     // header.classList.remove("bg-blur");
     header.classList.remove("padding");
   }
-  // console.log("scrolled");
+  console.log("scrolled");
 });
 
 menuBtn.forEach((btn) => {
@@ -28,4 +27,3 @@ menuBtn.forEach((btn) => {
     console.log("clicked");
   });
 });
-  // "source": "src/index.html",

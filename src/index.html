@@ -14,20 +14,27 @@
       defer
       src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"
     ></script>
+    <!--  -->
     <link href="./index.css" rel="stylesheet" />
     <script defer src="./index.js"></script>
+    <script defer>
+      alert("heyy");
+    </script>
+    <!--  -->
   </head>
   <body class="bg-black text-white">
     <div class="body">
       <header class="w-screen m-auto fixed flex justify-between transition-all">
         <div class="w-11/12 m-auto flex justify-between">
           <img src="./assets/logo.svg" alt="" class="logo h-16" />
-          <iconify-icon
-            inline
-            icon="mdi:menu"
-            style="color: white"
-            class="text-5xl flex items-center lg:hidden menuBtn cursor-pointer"
-          ></iconify-icon>
+          <button class="menuBtn z-10" title="btn">
+            <iconify-icon
+              inline
+              icon="mdi:menu"
+              style="color: white"
+              class="text-5xl flex items-center lg:hidden cursor-pointer"
+            ></iconify-icon>
+          </button>
           <nav
             class="absolute left-0 top-0 h-screen w-screen lg:h-[inherit] lg:w-max lg:relative flex lg:items-center text-xl font-normal bg-black lg:bg-transparent flex-col lg:flex-row justify-between menu transition-transform duration-500 translate-x-full lg:translate-x-0"
           >
@@ -44,19 +51,13 @@
                 <a href="">REGISTER</a>
               </li>
             </ul>
-            <button class="menuBtn">
+            <button class="menuBtn z-10" title="btn">
               <iconify-icon
                 icon="material-symbols:arrow-back-rounded"
                 style="color: white"
                 class="p-5 mb-8 block lg:hidden text-4xl cursor-pointer"
               ></iconify-icon>
             </button>
-            <!-- <iconify-icon
-                block
-                icon="mdi:menu"
-                style="color: white"
-                class="text-4xl p-2 flex items-center md:hidden"
-              ></iconify-icon> -->
           </nav>
         </div>
       </header>
