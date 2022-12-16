@@ -1,14 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html {
+  -webkit-text-size-adjust: 100%;
+}
 body {
   font-family: "Outfit", sans-serif;
+}
+.body {
   background-image: url(./assets/x.svg);
   background-size: 200vh 100vw;
   background-position: top right;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 450px) {
+  .body {
+    background-size: 100vh;
+    background-position-x: 90%;
+    background-position-y: 20vh;
+  }
+  .about {
+    background-size: 25vh, 25vh;
+  }
+}
+.show {
+  transform: translateX(0);
+}
+.hide {
+  transform: translateX(100%);
+}
+.bg-blur {
+  @apply backdrop-blur;
+}
+.padding {
+  @apply py-8;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -31,19 +59,50 @@ body {
 .navEle {
   @apply px-5 py-1 rounded transition duration-500 hover:bg-[#F02806] hover:text-black border-2 border-transparent;
 }
-@media (max-width: 450px) {
-  body {
-    background-size: 100vh;
-    background-position-x: 90%;
-    background-position-y: 20vh;
-  }
-  .about {
-    background-size: 25vh, 25vh;
-  }
+
+/* body {
+  font-family: "Outfit", sans-serif;
+  background-size: 200vh 100vw;
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-color: black;
+} */
+
+.register h2 {
+  color: red;
+  font-family: "Outfit", sans-serif;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 3rem;
 }
-.show {
-  transform: translateX(0);
+
+.register label {
+  color: aliceblue;
+  text-align: left;
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin-left: 20rem;
+  font-family: "Outfit", sans-serif;
 }
-.hide {
-  transform: translateX(100%);
+
+.register input {
+  height: 2rem;
+  width: 38rem;
+  margin-left: 22rem;
+}
+
+.register button {
+  padding: 1rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: red;
+  margin-top: 2rem;
+  text-align: right;
+  margin-left: 37rem;
+}
+
+.register a {
+  color: white;
+  align-items: center;
 }
