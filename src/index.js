@@ -1,6 +1,7 @@
 const menuBtn = document.querySelectorAll(".menuBtn");
 const menu = document.querySelector(".menu");
 const header = document.querySelector("header");
+const menuItems = document.querySelectorAll(".navEle");
 
 window.addEventListener("scroll", (e) => {
   if (window.scrollY >= 0) {
@@ -25,5 +26,10 @@ menuBtn.forEach((btn) => {
     }
 
     console.log("clicked");
+  });
+});
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    menu.classList.remove("show");
   });
 });
