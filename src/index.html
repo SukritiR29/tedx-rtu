@@ -36,7 +36,7 @@
             class="absolute left-0 top-0 h-screen w-screen lg:h-[inherit] lg:w-max lg:relative flex lg:items-center text-xl font-normal bg-black lg:bg-transparent flex-col lg:flex-row justify-between menu transition-transform duration-500 translate-x-full lg:translate-x-0"
           >
             <ul class="flex flex-col lg:flex-row gap-1">
-              <li class="navEle active"><a href="/">HOME</a></li>
+              <li class="navEle active"><a href="#home">HOME</a></li>
               <li class="navEle"><a href="#about">ABOUT</a></li>
               <li class="navEle"><a href="#speakers">SPEAKERS</a></li>
               <li class="navEle"><a href="#talks">TALKS</a></li>
@@ -59,7 +59,7 @@
         </div>
       </header>
       <!-- Home page -->
-      <section class="w-full lg:w-10/12 m-auto">
+      <section id="home" class="w-full lg:w-10/12 m-auto">
         <div
           class="hero grid grid-cols justify-items-center sm:justify-start sm:grid-cols-2 w-full m-auto items-center min-h-screen"
         >
@@ -79,9 +79,9 @@
       <!-- Aboutx page -->
       <section
         id="about"
-        class="w-10/12 m-auto flex items-center flex-row-reverse"
+        class="w-10/12 m-auto flex items-center flex-col md:flex-row-reverse"
       >
-        <img src="./assets/sample.png" alt="" class="w-1/2" />
+        <img src="./assets/sample.png" alt="" class="md:w-1/2" />
         <div class="">
           <h1 class="heading font-semibold text-5xl">
             About <span class="text-red-600">x</span>
@@ -109,8 +109,11 @@
       </section>
       <!-- Aboutx page -->
       <!-- About RTUx page -->
-      <section id="aboutrtu" class="w-10/12 m-auto flex items-center">
-        <img src="./assets/sample.png" alt="" class="w-1/2" />
+      <section
+        id="aboutrtu"
+        class="w-10/12 m-auto flex items-center flex-col md:flex-row"
+      >
+        <img src="./assets/sample.png" alt="" class="md:w-1/2" />
         <div class="">
           <h1 class="heading font-semibold text-5xl">
             About <span class="text-red-600">RTUx</span>
@@ -352,12 +355,8 @@
             <button
               class="text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg"
             >
-              Button
+              Submit
             </button>
-            <p class="text-xs text-gray-400 text-opacity-90 mt-3">
-              Chicharrones blog helvetica normcore iceland tousled brook viral
-              artisan.
-            </p>
           </div>
         </div>
       </section>
