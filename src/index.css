@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body,
 html {
-  -webkit-text-size-adjust: 100%;
+  /* -webkit-text-size-adjust: 100%; */
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Outfit", sans-serif;
@@ -57,7 +59,7 @@ body {
   background-repeat: no-repeat;
 }
 .navEle {
-  @apply px-5 py-1 rounded transition duration-500 hover:bg-[#F02806] hover:text-black border-2 border-transparent;
+  @apply px-5 py-1 rounded-2xl transition duration-500 hover:bg-[#F02806] hover:text-black border-2 border-transparent;
 }
 
 /* body {
