@@ -11,7 +11,7 @@ body {
 }
 .body {
   background-image: url(./assets/x.svg);
-  background-size: 200vh 100vw;
+  /* background-size: 200vh 100vw; */
   background-position: top right;
   background-repeat: no-repeat;
 }
