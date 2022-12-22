@@ -19,6 +19,54 @@
     <script defer src="./index.js"></script>
     <script defer src="./canvas.js"></script>
     <!--  -->
+
+    <!--  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <style>
+      .active {
+        color: inherit;
+        background-color: inherit;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(function () {
+        // Owl Carousel
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+          items: 3,
+          margin: 10,
+          loop: true,
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 1000,
+          autoplayHoverPause: true,
+          lazyload: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true,
+            },
+            600: {
+              items: 3,
+              nav: false,
+            },
+          },
+        });
+      });
+    </script>
   </head>
   <body class="bg-black text-white">
     <canvas
@@ -236,11 +284,11 @@
           Previous <span class="text-red-600">Talks</span>
         </h1>
 
-        <div class="flex flex-wrap -m-4">
-          <div class="xl:w-1/4 md:w-1/2 p-4">
+        <div class="owl-carousel m-auto owl-theme">
+          <div class="">
             <div class="bg-gray-900 p-6 rounded-lg">
               <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
+                class="h-72 rounded w-full object-cover object-center mb-6"
                 src="https://user-images.githubusercontent.com/87236107/208943071-75407012-ee9d-47a0-94ea-11e684545e80.png"
                 height="400"
                 width="600"
@@ -260,10 +308,10 @@
               </p>
             </div>
           </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="">
             <div class="bg-gray-900 p-6 rounded-lg">
               <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
+                class="h-72 rounded w-full object-cover object-center mb-6"
                 src="https://user-images.githubusercontent.com/87236107/208943083-7a707bf6-f2cd-4ba0-84ee-1a5056bc3909.png"
                 height="400"
                 width="600"
@@ -283,10 +331,10 @@
               </p>
             </div>
           </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="">
             <div class="bg-gray-900 p-6 rounded-lg">
               <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
+                class="h-72 rounded w-full object-cover object-center mb-6"
                 src="https://user-images.githubusercontent.com/87236107/208940872-065436c7-eab2-4a22-a50e-2da0d4dbec38.png"
                 height="400"
                 width="600"
@@ -306,10 +354,10 @@
               </p>
             </div>
           </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="">
             <div class="bg-gray-900 p-6 rounded-lg">
               <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
+                class="h-72 rounded w-full object-cover object-center mb-6"
                 src="https://user-images.githubusercontent.com/87236107/208943107-0d5c4867-f1ff-4a7c-aab9-1ffbb18d0178.png"
                 height="400"
                 width="600"

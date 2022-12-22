@@ -12,7 +12,6 @@ window.addEventListener("scroll", (e) => {
     // header.classList.remove("bg-blur");
     header.classList.remove("padding");
   }
-  console.log("scrolled");
 });
 
 menuBtn.forEach((btn) => {
