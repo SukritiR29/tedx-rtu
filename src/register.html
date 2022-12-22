@@ -20,8 +20,20 @@
 
     <link rel="stylesheet" href="./index.css" />
     <title>Registration</title>
+    <script defer>
+      window.addEventListener("load", () => {
+        document.querySelector("#loader").classList.add("hidden");
+      });
+    </script>
   </head>
   <body class="bg-black text-white m-auto min-h-screen sm:w-11/12">
+    <!-- loader -->
+    <div
+      id="loader"
+      class="z-50 h-screen w-full fixed grid place-items-center bg-black"
+    >
+      <span class="loader"></span>
+    </div>
     <div class="">
       <section class="py-8 sm:pt-32">
         <a href="/" class="flex items-center text-3xl">
@@ -127,6 +139,11 @@
           </div>
         </div>
       </section>
+      <footer class="w-full text-center py-12">
+        &lt;/&gt; with ☕ by
+        <a href="" class="text-blue-300">Aniruddh Soni </a>and 🖌 by
+        <a href="" class="text-blue-300">Sukriti Rajora</a>
+      </footer>
     </div>
     <canvas
       class="-z-40 select-none fixed h-screen w-full inset-0 opacity-75"

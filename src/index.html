@@ -18,6 +18,7 @@
     <link href="./index.css" rel="stylesheet" />
     <script defer src="./index.js"></script>
     <script defer src="./canvas.js"></script>
+
     <!--  -->
 
     <!--  -->
@@ -71,11 +72,25 @@
         });
       });
     </script>
+    <script defer>
+      window.addEventListener("load", () => {
+        document.querySelector("#loader").classList.add("hidden");
+      });
+    </script>
   </head>
   <body class="bg-black text-white">
+    <!-- loader -->
+    <div
+      id="loader"
+      class="z-50 h-screen w-full fixed grid place-items-center bg-black"
+    >
+      <span class="loader"></span>
+    </div>
+    <!-- canvas -->
     <canvas
       class="-z-40 select-none fixed h-screen w-full inset-0 opacity-75"
     ></canvas>
+    <!-- body -->
     <div class="body">
       <header
         class="w-screen m-auto fixed flex justify-between transition-all z-10"
